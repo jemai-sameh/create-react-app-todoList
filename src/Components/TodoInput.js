@@ -1,7 +1,12 @@
 import React from 'react'
 
-export const TodoInput = () => {
+export const TodoInput = ( {todo,setTodo}) => {
   return (
-    <div>hello</div>
+    <div className='input-wrapper'>
+        <input type="text" name="todo" 
+        value=""
+        placeholder='create new Todo' />
+        <button className='add-button' >Add</button>
+    </div>
   )
 }
